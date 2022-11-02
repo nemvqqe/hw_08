@@ -1,0 +1,30 @@
+.logo {
+  &__text {
+    color: $accent-color;
+    font-family: "Raleway", sans-serif;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+  }
+
+  &__header-studio {
+    color: $primary-black-color;
+  }
+
+  &__footer-studio {
+    color: $primary-white-color;
+  }
+
+  &__header-studio,
+  &__footer-studio {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__text:hover > &__header-studio,
+  &__text:focus > &__header-studio,
+  &__text:hover > &__footer-studio,
+  &__text:focus > &__footer-studio {
+    color: $accent-color;
+  }
+}

@@ -1,0 +1,9 @@
+.footer {
+  background-color: $primary-footer-bg-color;
+  padding: 60px 0;
+
+  .container {
+    @extend %container;
+    display: flex;
+  }
+}

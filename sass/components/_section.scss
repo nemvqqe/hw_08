@@ -1,0 +1,40 @@
+.section {
+  background-color: $primary-white-color;
+  padding-bottom: 94px;
+
+  &__title {
+    @extend %title;
+  }
+
+  &__list {
+    @extend %list;
+    display: flex;
+  }
+
+  &__item {
+    @extend %section__item;
+    @include generateBackground($backgrounds);
+  }
+
+  &__thumb {
+    position: absolute;
+    bottom: 0;
+
+    width: 370px;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+
+    &-title {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+
+      color: $primary-white-color;
+      font-size: 14px;
+      line-height: 1.1;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+  }
+}

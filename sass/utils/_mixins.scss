@@ -1,0 +1,9 @@
+$backgrounds: "neondesktop", "phonedesktop", "rgbdesktop";
+
+@mixin generateBackground($backgrounds) {
+  @each $backgroundName in $backgrounds {
+    &_#{$backgroundName} {
+      background-image: url("../images/#{$backgroundName}.jpg");
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateY(0);
+
+  min-height: 581px;
+  min-width: 528px;
+
+  text-align: center;
+
+  background-color: $primary-white-color;
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &__cross {
+    fill: currentColor;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__container {
+    width: 100%;
+
+    padding: 0 40px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    display: inline-block;
+
+    color: $title-text-color;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+}

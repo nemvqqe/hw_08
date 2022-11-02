@@ -1,0 +1,14 @@
+.header {
+  /* position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0; */
+  background-color: $primary-white-color;
+  border-bottom: 1px solid $primary-line-color;
+
+  &__container {
+    @extend %container;
+    display: flex;
+    align-items: center;
+  }
+}

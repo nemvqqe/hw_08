@@ -1,0 +1,78 @@
+.hero {
+  position: relative;
+  display: flex;
+
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 200px 0;
+
+  background-color: $primary-hero-bg-color;
+  background-image: url(../images/teamwork.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+
+  .container {
+    position: relative;
+  }
+
+  &::before {
+    display: inline-flex;
+
+    content: "";
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+
+    background-color: $hero-shadow;
+  }
+
+  &__title {
+    color: $primary-white-color;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    text-transform: uppercase;
+
+    width: 696px;
+
+    margin: 0 auto;
+  }
+
+  &__button {
+    color: $primary-white-color;
+
+    background-color: $accent-color;
+
+    border: transparent;
+    border-radius: 4px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    font-family: inherit;
+
+    cursor: pointer;
+
+    padding: 10px 32px;
+    margin: 30px auto 0 auto;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: $primary-filter-bg-color;
+      color: $title-text-color;
+    }
+  }
+}
