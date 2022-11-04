@@ -2,6 +2,10 @@
   background-color: $primary-white-color;
   padding-bottom: 94px;
 
+  &__container {
+    @extend %container;
+  }
+
   &__title {
     @extend %title;
   }

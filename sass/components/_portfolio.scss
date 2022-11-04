@@ -3,6 +3,10 @@
   padding-top: 94px;
   padding-bottom: 94px;
 
+  &__container {
+    @extend %container;
+  }
+
   &__list {
     @extend %list;
     display: flex;

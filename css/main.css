@@ -5,7 +5,7 @@
   font-style: normal;
 }
 
-.footer .container, .header__container {
+.client__container, .team__container, .section__container, .benefits__container, .hero__container, .footer .container, .header__container {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
@@ -288,12 +288,6 @@ p {
 
 img {
   display: block;
-}
-
-.container {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
 }
 
 .header {
@@ -882,7 +876,7 @@ img {
   background-size: cover;
   text-align: center;
 }
-.hero .container {
+.hero__container {
   position: relative;
 }
 .hero::before {

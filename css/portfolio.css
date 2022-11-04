@@ -5,7 +5,7 @@
   font-style: normal;
 }
 
-.footer .container, .header__container {
+.portfolio__container, .footer .container, .header__container {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
@@ -268,12 +268,6 @@ p {
 
 img {
   display: block;
-}
-
-.container {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
 }
 
 .header {
