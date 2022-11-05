@@ -3,10 +3,16 @@
 
   &__list {
     @extend %list;
+
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+    }
   }
 
   &__item {
-    margin-top: 9px;
+    &:not(:first-child) {
+      margin-top: 8px;
+    }
   }
 
   &__text {

@@ -2,6 +2,10 @@
   background-color: $primary-white-color;
   padding-bottom: 94px;
 
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+
   &__container {
     @extend %container;
   }

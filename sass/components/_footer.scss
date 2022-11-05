@@ -5,5 +5,23 @@
   .container {
     @extend %container;
     display: flex;
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+      &__logo-address {
+        margin-bottom: 30px;
+      }
+    }
+
+    @media screen and (max-width: 1199px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}
+
+.logo {
+  @media screen and (max-width: 1199px) {
+    text-align: center;
   }
 }
