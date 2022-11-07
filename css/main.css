@@ -45,6 +45,23 @@
   margin-bottom: 50px;
   margin-top: 0;
 }
+@media screen and (max-width: 1199px) {
+  .client__title, .team__title, .section__title {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .client, .team, .benefits {
+    padding: 60px 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .client, .team, .benefits {
+    padding: 94px 0;
+  }
+}
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
@@ -1040,16 +1057,23 @@ img {
 
 .benefits {
   background-color: #ffffff;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 .benefits__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  gap: 30px;
 }
-.benefits__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .benefits__list {
+    grid-template-rows: none;
+    grid-template-columns: auto auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits__list {
+    grid-template-rows: none;
+    grid-template-columns: auto auto auto auto;
+  }
 }
 .benefits__icon {
   display: -webkit-box;
@@ -1073,6 +1097,11 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin: 0 0 10px 0;
+}
+@media screen and (max-width: 1199px) {
+  .benefits__title {
+    text-align: center;
+  }
 }
 .benefits__text {
   color: #757575;
@@ -1125,20 +1154,40 @@ img {
   text-transform: uppercase;
 }
 
-.team {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 .team__card {
+  height: 622px;
   background-color: #ffffff;
-  height: 428px;
   text-align: center;
   border-radius: 0 0 4px 4px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-.team__card:not(:last-child) {
-  margin-right: 30px;
+.team__card img {
+  height: 460px;
+}
+@media screen and (min-width: 768px) {
+  .team__card img {
+    width: 354px;
+    height: 374px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__card img {
+    width: 270px;
+    height: 260px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team__card {
+    width: 354px;
+    height: 536px;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .team__card {
+    width: 270px;
+    height: 428px;
+  }
 }
 .team__text {
   color: #757575;
@@ -1157,20 +1206,40 @@ img {
   margin-bottom: 10px;
 }
 .team__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  gap: 30px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team__list {
+    grid-template-rows: none;
+    grid-template-columns: auto auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__list {
+    grid-template-rows: none;
+    grid-template-columns: auto auto auto auto;
+  }
 }
 .team__social-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 30px;
   margin-top: 16px;
+}
+@media screen and (max-width: 1199px) {
+  .team__social-list {
+    margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .team__social-list {
+    margin-bottom: 30px;
+  }
 }
 .team__social-link {
   display: -webkit-box;
@@ -1197,12 +1266,8 @@ img {
 .team__social-icon {
   fill: currentColor;
 }
-.team__item:not(:last-child) {
-  margin-right: 10px;
-}
 
 .client {
-  padding: 94px 0;
   background-color: #ffffff;
 }
 @media screen and (max-width: 1199px) {
@@ -1214,11 +1279,6 @@ img {
   display: grid;
   grid-template-columns: auto auto;
   gap: 30px;
-}
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .client__list {
-    grid-template-columns: auto auto;
-  }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .client__list {

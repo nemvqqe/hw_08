@@ -1,6 +1,6 @@
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @extend %mobile-tablet_padding;
+  @extend %desktop_padding;
 
   &__container {
     @extend %container;
@@ -11,16 +11,37 @@
   }
 
   &__card {
+    img {
+      height: 460px;
+
+      @media screen and (min-width: 768px) {
+        width: 354px;
+        height: 374px;
+      }
+
+      @media screen and (min-width: 1200px) {
+        width: 270px;
+        height: 260px;
+      }
+    }
+
+    height: 622px;
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+      height: 536px;
+    }
+
+    @media screen and (min-width: 1199px) {
+      width: 270px;
+      height: 428px;
+    }
+
     background-color: $primary-white-color;
-    height: 428px;
     text-align: center;
     border-radius: 0 0 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
-
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
   }
 
   &__text {
@@ -43,16 +64,39 @@
 
   &__list {
     @extend %list;
-    display: flex;
-    margin: 0 auto;
+
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    gap: 30px;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      grid-template-rows: none;
+      grid-template-columns: auto auto;
+    }
+
+    @media screen and (min-width: 1200px) {
+      grid-template-rows: none;
+      grid-template-columns: auto auto auto auto;
+    }
   }
 
   &__social-list {
     @extend %list;
-    display: flex;
+
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+
     justify-content: center;
-    margin-bottom: 30px;
     margin-top: 16px;
+
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 24px;
+    }
+
+    @media screen and (min-width: 1199px) {
+      margin-bottom: 30px;
+    }
   }
 
   &__social-link {
@@ -76,11 +120,5 @@
 
   &__social-icon {
     fill: currentColor;
-  }
-
-  &__item {
-    &:not(:last-child) {
-      margin-right: 10px;
-    }
   }
 }

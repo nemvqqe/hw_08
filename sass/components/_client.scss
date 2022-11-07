@@ -1,5 +1,7 @@
 .client {
-  padding: 94px 0;
+  @extend %desktop_padding;
+  @extend %mobile-tablet_padding;
+
   background-color: $primary-white-color;
 
   @media screen and (max-width: 1199px) {
@@ -15,13 +17,11 @@
   }
 
   &__list {
+    @extend %list;
+
     display: grid;
     grid-template-columns: auto auto;
     gap: 30px;
-
-    @media screen and (min-width: 480px) and (max-width: 767px) {
-      grid-template-columns: auto auto;
-    }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       grid-template-columns: auto auto auto;
@@ -30,8 +30,6 @@
     @media screen and (min-width: 1200px) {
       grid-template-columns: auto auto auto auto auto auto;
     }
-
-    @extend %list;
   }
 
   &__link {

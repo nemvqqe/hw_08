@@ -43,4 +43,20 @@
   text-align: center;
   margin-bottom: 50px;
   margin-top: 0;
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 30px;
+  }
+}
+
+%mobile-tablet_padding {
+  @media screen and (max-width: 1199px) {
+    padding: 60px 0;
+  }
+}
+
+%desktop_padding {
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
 }

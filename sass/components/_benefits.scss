@@ -1,7 +1,7 @@
 .benefits {
   background-color: $primary-white-color;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @extend %desktop_padding;
+  @extend %mobile-tablet_padding;
 
   &__container {
     @extend %container;
@@ -9,12 +9,19 @@
 
   &__list {
     @extend %list;
-    display: flex;
-  }
 
-  &__item {
-    &:not(:last-child) {
-      margin-right: 30px;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    gap: 30px;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      grid-template-rows: none;
+      grid-template-columns: auto auto;
+    }
+
+    @media screen and (min-width: 1200px) {
+      grid-template-rows: none;
+      grid-template-columns: auto auto auto auto;
     }
   }
 
@@ -36,6 +43,10 @@
     text-transform: uppercase;
 
     margin: 0 0 10px 0;
+
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+    }
   }
 
   &__text {
