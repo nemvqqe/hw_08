@@ -1,13 +1,36 @@
 .filter {
   &__list {
     @extend %list;
+
     display: flex;
-    justify-content: center;
+
     padding-bottom: 50px;
+
+    @media screen and (max-width: 767px) {
+      flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 768px) {
+      justify-content: center;
+    }
   }
 
-  &__item:not(:last-child) {
-    margin-right: 8px;
+  &__item {
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+
+    &:nth-child(2n + 3) {
+      @media screen and (max-width: 767px) {
+        margin-right: 0;
+      }
+    }
+
+    &:nth-child(-n + 3) {
+      @media screen and (max-width: 767px) {
+        margin-bottom: 15px;
+      }
+    }
   }
 
   &__button {
