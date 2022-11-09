@@ -7,6 +7,13 @@
   border-bottom: 1px solid $primary-line-color;
 
   &__container {
+    @media screen and (max-width: 767px) {
+      position: relative;
+
+      padding: 16px 15px;
+      justify-content: space-between;
+    }
+
     @extend %container;
     display: flex;
     align-items: center;

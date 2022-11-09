@@ -12,6 +12,7 @@
 
   &__card {
     img {
+      max-width: 450px;
       height: 460px;
 
       @media screen and (min-width: 768px) {

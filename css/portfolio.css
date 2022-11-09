@@ -81,6 +81,10 @@ body {
   font-family: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; /* 2 */
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 /*
 Grouping content
 ================
@@ -313,6 +317,15 @@ img {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 767px) {
+  .header__container {
+    position: relative;
+    padding: 16px 15px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
 
 .footer {
   background-color: #2f303a;
@@ -372,6 +385,11 @@ img {
   color: #2196f3;
 }
 
+@media screen and (max-width: 767px) {
+  .nav {
+    display: none;
+  }
+}
 .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -428,6 +446,11 @@ img {
   display: -ms-flexbox;
   display: flex;
   margin-left: auto;
+}
+@media screen and (max-width: 767px) {
+  .con {
+    display: none;
+  }
 }
 .con__list {
   margin-left: auto;

@@ -1,10 +1,19 @@
 .hero {
+  @media screen and (max-width: 767px) {
+    height: 400px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 200px 0;
+  }
+
   position: relative;
   display: flex;
 
+  padding: 118px 0;
+
   max-width: 1600px;
   margin: 0 auto;
-  padding: 200px 0;
 
   background-color: $primary-hero-bg-color;
   background-image: url(../images/teamwork.jpg);
@@ -35,13 +44,19 @@
   }
 
   &__title {
+    @media screen and (min-width: 768px) {
+      font-size: 44px;
+      line-height: 1.4;
+
+      width: 696px;
+    }
     color: $primary-white-color;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
+    font-size: 26px;
+    line-height: 1.6;
     text-transform: uppercase;
 
-    width: 696px;
+    width: 360px;
 
     margin: 0 auto;
   }

@@ -54,6 +54,31 @@
             </li>
           </ul>
         </div>
+        <div class="menu">
+          <button
+            class="menu__button is-open"
+            aria-expanded="false"
+            data-menu-button
+            aria-controls="menu__container"
+          >
+            <svg
+              class="menu__icon"
+              width="24"
+              height="24"
+              aria-label="Перемикач мобільного меню"
+            >
+              <use
+                class="menu__icon-burger"
+                href="./images/sprite.svg#menu"
+              ></use>
+              <use
+                class="menu__icon-cross"
+                href="./images/sprite.svg#menu-cross"
+              ></use>
+            </svg>
+          </button>
+          <div class="menu__container" id="menu__container" data-menu></div>
+        </div>
       </div>
     </header>
     <main class="main">
@@ -145,7 +170,7 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__card">
-              <img src="./images/igor.jpg" alt="Ігор Дем'яненко" width="450" />
+              <img src="./images/igor.jpg" alt="Ігор Дем'яненко" />
               <h2 class="team__name">Ігор Дем'яненко</h2>
               <p class="team__text">Product Designer</p>
               <ul class="team__social-list">
@@ -180,7 +205,7 @@
               </ul>
             </li>
             <li class="team__card">
-              <img src="./images/olga.jpg" alt="Ольга Рєпіна" width="450" />
+              <img src="./images/olga.jpg" alt="Ольга Рєпіна" />
               <h2 class="team__name">Ольга Рєпіна</h2>
               <p class="team__text">Frontend Developer</p>
               <ul class="team__social-list">
@@ -215,7 +240,7 @@
               </ul>
             </li>
             <li class="team__card">
-              <img src="./images/mykola.jpg" alt="Микола Тарасов" width="450" />
+              <img src="./images/mykola.jpg" alt="Микола Тарасов" />
               <h2 class="team__name">Микола Тарасов</h2>
               <p class="team__text">Marketing</p>
               <ul class="team__social-list">
@@ -250,11 +275,7 @@
               </ul>
             </li>
             <li class="team__card">
-              <img
-                src="./images/mykhailo.jpg"
-                alt="Михайло Єрмаков"
-                width="450"
-              />
+              <img src="./images/mykhailo.jpg" alt="Михайло Єрмаков" />
               <h2 class="team__name">Михайло Єрмаков</h2>
               <p class="team__text">UI Designer</p>
               <ul class="team__social-list">
@@ -524,6 +545,7 @@
         </div>
       </div>
     </div>
+    <script src="./js/menu.js"></script>
     <script src="./js/speaker.js"></script>
     <!-- <script src="./js/paddingforbody.js"></script> -->
     <script src="./js/modal.js"></script>

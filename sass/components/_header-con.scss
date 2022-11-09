@@ -2,6 +2,10 @@
   display: flex;
   margin-left: auto;
 
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
   &__list {
     @extend %list;
     margin-left: auto;
