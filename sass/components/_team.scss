@@ -11,33 +11,6 @@
   }
 
   &__card {
-    img {
-      max-width: 450px;
-      height: 460px;
-
-      @media screen and (min-width: 768px) {
-        width: 354px;
-        height: 374px;
-      }
-
-      @media screen and (min-width: 1200px) {
-        width: 270px;
-        height: 260px;
-      }
-    }
-
-    height: 622px;
-
-    @media screen and (min-width: 768px) {
-      width: 354px;
-      height: 536px;
-    }
-
-    @media screen and (min-width: 1199px) {
-      width: 270px;
-      height: 428px;
-    }
-
     background-color: $primary-white-color;
     text-align: center;
     border-radius: 0 0 4px 4px;
