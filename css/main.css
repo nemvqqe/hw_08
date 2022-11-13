@@ -1227,7 +1227,7 @@ img {
   font-size: 26px;
   line-height: 1.6;
   text-transform: uppercase;
-  width: 360px;
+  max-width: 360px;
   margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
