@@ -299,6 +299,8 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .header {
@@ -1027,6 +1029,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .mobile-menu__soc .mobile-menu__item:not(:last-child) {
   margin-right: 20px;
