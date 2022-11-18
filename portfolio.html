@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./css/portfolio.min.css" />
   </head>
   <body>
+    <!-- header -->
     <header class="header">
       <div class="container header__container">
         <div class="logo">
@@ -68,9 +69,12 @@
         </button>
       </div>
     </header>
+    <!-- main -->
     <main>
+      <!-- section portfolio -->
       <section class="portfolio">
         <div class="portfolio__container">
+          <!-- filter -->
           <ul class="filter__list">
             <li class="filter__item">
               <button
@@ -93,11 +97,35 @@
               <button class="filter__button" type="button">Маркетинг</button>
             </li>
           </ul>
+          <!-- portfolio -->
           <ul class="portfolio__list">
             <li class="portfolio__item">
               <a class="portfolio__link" href="./">
                 <div class="portfolio__link_thumb">
-                  <img src="./images/laptop.jpg" alt="Ноутбук" width="370" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/laptop-370.jpg 1x,
+                        ./images/laptop-740.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/laptop-354.jpg 1x,
+                        ./images/laptop-708.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/laptop-450.jpg 1x,
+                        ./images/laptop-900.jpg 2x
+                      "
+                    />
+                    <img src="./images/laptop.jpg" alt="Ноутбук" />
+                  </picture>
                   <p class="portfolio__link_overlay-content">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -113,11 +141,30 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="./">
                 <div class="portfolio__link_thumb">
-                  <img
-                    src="./images/players.jpg"
-                    alt="Гравці у баскетбол"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/players-370.jpg 1x,
+                        ./images/players-740.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/players-354.jpg 1x,
+                        ./images/players-708.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/players-450.jpg 1x,
+                        ./images/players-900.jpg 2x
+                      "
+                    />
+                    <img src="./images/players.jpg" alt="Гравці у баскетбол" />
+                  </picture>
                   <p class="portfolio__link_overlay-content">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -135,7 +182,30 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="./">
                 <div class="portfolio__link_thumb">
-                  <img src="./images/seafood.jpg" alt="Ресторан" width="370" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/seafood-370.jpg 1x,
+                        ./images/seafood-740.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/seafood-354.jpg 1x,
+                        ./images/seafood-708.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/seafood-450.jpg 1x,
+                        ./images/seafood-900.jpg 2x
+                      "
+                    />
+                    <img src="./images/seafood.jpg" alt="Ресторан" />
+                  </picture>
                   <p class="portfolio__link_overlay-content">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -151,11 +221,30 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="./">
                 <div class="portfolio__link_thumb">
-                  <img
-                    src="./images/headphones.jpg"
-                    alt="Навушники"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/headphones-370.jpg 1x,
+                        ./images/headphones-740.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/headphones-354.jpg 1x,
+                        ./images/headphones-708.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/headphones-450.jpg 1x,
+                        ./images/headphones-900.jpg 2x
+                      "
+                    />
+                    <img src="./images/headphones.jpg" alt="Навушники" />
+                  </picture>
                   <p class="portfolio__link_overlay-content">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -171,7 +260,21 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="./">
                 <div class="portfolio__link_thumb">
-                  <img src="./images/box.jpg" alt="Коробки" width="370" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/box-370.jpg 1x, ./images/box-740.jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/box-354.jpg 1x, ./images/box-708.jpg 2x"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/box-450.jpg 1x, ./images/box-900.jpg 2x"
+                    />
+                    <img src="./images/box.jpg" alt="Коробки" />
+                  </picture>
                   <p class="portfolio__link_overlay-content">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -187,7 +290,21 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="./">
                 <div class="portfolio__link_thumb">
-                  <img src="./images/mac.jpg" alt="Мак" width="370" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/mac-370.jpg 1x, ./images/mac-740.jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/mac-354.jpg 1x, ./images/mac-708.jpg 2x"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/mac-450.jpg 1x, ./images/mac-900.jpg 2x"
+                    />
+                    <img src="./images/mac.jpg" alt="Мак" />
+                  </picture>
                   <p class="portfolio__link_overlay-content">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -203,7 +320,30 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="./">
                 <div class="portfolio__link_thumb">
-                  <img src="./images/book.jpg" alt="Книга" width="370" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/book-370.jpg 1x,
+                        ./images/book-740.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/book-354.jpg 1x,
+                        ./images/book-708.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/book-450.jpg 1x,
+                        ./images/book-900.jpg 2x
+                      "
+                    />
+                    <img src="./images/book.jpg" alt="Книга" />
+                  </picture>
                   <p class="portfolio__link_overlay-content">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -219,7 +359,30 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="./">
                 <div class="portfolio__link_thumb">
-                  <img src="./images/labeltag.jpg" alt="Бірка" width="370" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/labeltag-370.jpg 1x,
+                        ./images/labeltag-740.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/labeltag-354.jpg 1x,
+                        ./images/labeltag-708.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/labeltag-450.jpg 1x,
+                        ./images/labeltag-900.jpg 2x
+                      "
+                    />
+                    <img src="./images/labeltag.jpg" alt="Бірка" />
+                  </picture>
                   <p class="portfolio__link_overlay-content">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -235,11 +398,30 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="./">
                 <div class="portfolio__link_thumb">
-                  <img
-                    src="./images/desktop.jpg"
-                    alt="Робочий стіл"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/desktop-370.jpg 1x,
+                        ./images/desktop-740.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/desktop-354.jpg 1x,
+                        ./images/desktop-708.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/desktop-450.jpg 1x,
+                        ./images/desktop-900.jpg 2x
+                      "
+                    />
+                    <img src="./images/desktop.jpg" alt="Робочий стіл" />
+                  </picture>
                   <p class="portfolio__link_overlay-content">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -256,6 +438,7 @@
         </div>
       </section>
     </main>
+    <!-- footer -->
     <footer class="footer">
       <div class="container">
         <div class="container__logo-address">
@@ -348,6 +531,7 @@
         </div>
       </div>
     </footer>
+    <!-- mobile menu -->
     <div class="menu__container js-menu-container" id="mobile-menu">
       <button class="menu__toggle js-close-menu">
         <svg class="menu__toggle_icon" width="24" height="24">
@@ -402,6 +586,7 @@
         </ul>
       </div>
     </div>
+    <!-- js -->
     <script src="./js/menu.js"></script>
     <!-- <script src="./js/paddingforbody.js"></script> -->
   </body>
