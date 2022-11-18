@@ -1194,7 +1194,6 @@ img {
   max-width: 1600px;
   margin: 0 auto;
   background-color: #c4c4c4;
-  background-image: url(../images/teamwork.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1208,6 +1207,36 @@ img {
 @media screen and (min-width: 768px) {
   .hero {
     padding: 200px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: url(../images/teamwork-1600.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/teamwork-3200.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url(../images/teamwork-768.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/teamwork-1536.jpg);
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero {
+    background-image: url(../images/teamwork-480.jpg);
+  }
+}
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/teamwork-960.jpg);
   }
 }
 .hero__container {
@@ -1337,11 +1366,26 @@ img {
 .section__item_neondesktop {
   background-image: url("../images/neondesktop.jpg");
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .section__item_neondesktop {
+    background-image: url("../images/neondesktop-740.jpg");
+  }
+}
 .section__item_phonedesktop {
   background-image: url("../images/phonedesktop.jpg");
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .section__item_phonedesktop {
+    background-image: url("../images/phonedesktop-740.jpg");
+  }
+}
 .section__item_rgbdesktop {
   background-image: url("../images/rgbdesktop.jpg");
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .section__item_rgbdesktop {
+    background-image: url("../images/rgbdesktop-740.jpg");
+  }
 }
 .section__thumb {
   position: absolute;

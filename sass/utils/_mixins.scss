@@ -4,6 +4,13 @@ $backgrounds: "neondesktop", "phonedesktop", "rgbdesktop";
   @each $backgroundName in $backgrounds {
     &_#{$backgroundName} {
       background-image: url("../images/#{$backgroundName}.jpg");
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url("../images/#{$backgroundName}-740.jpg");
+      }
     }
   }
 }

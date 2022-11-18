@@ -16,11 +16,37 @@
   margin: 0 auto;
 
   background-color: $primary-hero-bg-color;
-  background-image: url(../images/teamwork.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/teamwork-1600.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/teamwork-3200.jpg);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/teamwork-768.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/teamwork-1536.jpg);
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    background-image: url(../images/teamwork-480.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/teamwork-960.jpg);
+    }
+  }
 
   &__container {
     @extend %container;
