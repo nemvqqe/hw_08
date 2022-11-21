@@ -12,7 +12,6 @@
 
   padding: 118px 0;
 
-  max-width: 1600px;
   margin: 0 auto;
 
   background-color: $primary-hero-bg-color;
@@ -22,6 +21,7 @@
   text-align: center;
 
   @media screen and (min-width: 1200px) {
+    max-width: 1600px;
     background-image: url(../images/teamwork-1600.jpg);
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -30,7 +30,8 @@
     }
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 768px;
     background-image: url(../images/teamwork-768.jpg);
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -40,6 +41,7 @@
   }
 
   @media screen and (max-width: 767px) {
+    max-width: 480px;
     background-image: url(../images/teamwork-480.jpg);
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),

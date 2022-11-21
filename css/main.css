@@ -1191,7 +1191,6 @@ img {
   display: -ms-flexbox;
   display: flex;
   padding: 118px 0;
-  max-width: 1600px;
   margin: 0 auto;
   background-color: #c4c4c4;
   background-position: center;
@@ -1211,6 +1210,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .hero {
+    max-width: 1600px;
     background-image: url(../images/teamwork-1600.jpg);
   }
 }
@@ -1219,18 +1219,20 @@ img {
     background-image: url(../images/teamwork-3200.jpg);
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
+    max-width: 768px;
     background-image: url(../images/teamwork-768.jpg);
   }
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
   .hero {
     background-image: url(../images/teamwork-1536.jpg);
   }
 }
 @media screen and (max-width: 767px) {
   .hero {
+    max-width: 480px;
     background-image: url(../images/teamwork-480.jpg);
   }
 }
