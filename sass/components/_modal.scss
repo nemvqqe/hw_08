@@ -1,24 +1,29 @@
 .modal {
-  @media screen and (min-width: 768px) {
-    position: absolute;
+  @media screen and (max-width: 767px) {
+    position: relative;
 
-    top: 50%;
-    left: 50%;
-
-    transform: translate(-50%, -50%) translateY(0);
-
-    min-height: 581px;
-    min-width: 528px;
-
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    justify-content: center;
   }
 
-  position: relative;
+  @media screen and (min-width: 768px) {
+    min-height: 581px;
+    min-width: 528px;
+  }
+
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%) translateY(0);
 
   width: 100%;
   max-width: 450px;
 
   text-align: center;
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   background-color: $primary-white-color;
   border-radius: 4px;
