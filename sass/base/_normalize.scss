@@ -47,7 +47,8 @@ body {
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; /* 2 */
 }
 
-body.modal-open {
+body.modal-open,
+body.is-open {
   overflow: hidden;
 }
 

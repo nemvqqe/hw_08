@@ -110,8 +110,8 @@
 
     display: inline-block;
 
-    width: 16px;
-    height: 16px;
+    min-width: 16px;
+    min-height: 16px;
 
     border: 2px solid $title-text-color;
     border-radius: 2px;
@@ -151,7 +151,7 @@
   }
 
   &__terms {
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
       font-size: 14px;
       line-height: 1.7;
     }
